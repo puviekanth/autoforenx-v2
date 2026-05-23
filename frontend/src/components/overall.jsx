@@ -152,10 +152,7 @@ function Summary() {
     <section className="min-h-screen bg-slate-950 text-white p-6 font-tech">
       {/* Back Button */}
 
-      <button className="flex items-center gap-2 border border-slate-700 hover:border-cyan-400 hover:bg-slate-900 transition-all duration-300 rounded-xl px-4 py-2 mb-8">
-        <ArrowLeft size={18} />
-        Back
-      </button>
+      
 
       {/* Header */}
 

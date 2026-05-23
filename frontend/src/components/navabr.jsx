@@ -322,6 +322,7 @@ import {
   Play,
   Square,
   Download,
+  Home,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -379,6 +380,10 @@ export default function Navbar() {
     setMenuOpen(false);
     setMenuType(null);
   };
+
+  const navigateHome = () =>{
+    navigate('/home');
+  }
 
   // ================= CLOSE ON OUTSIDE CLICK =================
 
@@ -588,8 +593,9 @@ export default function Navbar() {
            </span>
          </div>
 
-         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-white shadow-lg">
-           A
+         <div className="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center hover:cursor-pointer" onClick={()=>{navigateHome()}}>
+           {/* <Shield className="text-cyan-400" size={20} /> */}
+           <Home className="text-cyan-400" size={20} />
          </div>
        </div>
     </nav>

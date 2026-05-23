@@ -11,6 +11,7 @@ import {
   FileText,
   Sparkles,
 } from "lucide-react";
+import Navbar from './navabr';
 
 export default function UploadLogs() {
   const [windowsLog, setWindowsLog] = useState(null);
@@ -77,6 +78,8 @@ export default function UploadLogs() {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-[#020617] text-white px-6 py-10">
       <div className="max-w-6xl mx-auto">
         
@@ -365,5 +368,6 @@ export default function UploadLogs() {
         </div>
       </div>
     </div>
+    </>
   );
 }
